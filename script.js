@@ -83,3 +83,27 @@ toggle.addEventListener('click', () => {
     toggle.innerHTML = document.body.classList.contains('light-mode') ? '<i class="fas fa-sun"></i>' : '<i class="fas fa-moon"></i>';
 });
 window.addEventListener('load', () => document.body.classList.add('loaded'));
+// Animate progress bars on scroll
+const progressBars = document.querySelectorAll('.progress');
+const animateBars = () => {
+    progressBars.forEach(bar => {
+        const width = bar.style.width;
+        bar.style.width = '0%'; // Reset
+        setTimeout(() => bar.style.width = width, 500); // Animate to original width
+    });
+};
+// Trigger on section visibility (using existing observer)
+const skillsSection = document.getElementById('skills');
+observer.observe(skillsSection); // Add to existing observer
+// Modify observer callback to include animation
+const originalCallback = observer.callback; // Assuming you have the observer
+observer.callback = (entries) => {
+    entries.forEach(entry => {
+        if (entry.isIntersecting && entry.target.id === 'skills') {
+            animateBars();
+        }
+        if (entry.target.classList.contains('section')) {
+            entry.target.classList.add('visible');
+        }
+    });
+};
