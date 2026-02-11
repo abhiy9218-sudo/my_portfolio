@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Student Portfolio</title>
+    <!-- Google Fonts: Poppins for modern sans-serif -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <!-- Link to external CSS -->
+    <link rel="stylesheet" href="style.css">
+    <!-- EmailJS for form handling -->
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/particles.js/2.0.0/particles.min.js"></script>
+</head>
+<body>
+    <!-- Sticky Navbar -->
+    <nav id="navbar">
+        <div class="nav-container">
+            <h1 class="logo">Portfolio</h1>
+            <ul class="nav-links">
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#resume">Resume</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="section">
+        <div class="container">
+            <div class="home-content">
+                <div class="text-content">
+                    <h1>Hi, I'm <span class="accent">Abhishek Yadav</span></h1>
+                    <p class="tagline">Aspiring Web Developer and Data Analysis and Ai Generating</p>
+                    <a href="#about" class="btn">Learn More About Me </a>
+                </div>
+                <div class="image-content">
+                    <img src="Abhi2_portfolio_image.jpg" alt="Profile Photo" class="profile-photo">
+                </div>
+                <div id="particles-js"></div> <!-- Add this inside .home-content or as a background -->
+            </div>
+        </div>
+    </section>
+
+    <!-- About Me Section -->
+    <section id="about" class="section">
+        <div class="container">
+            <h2>About Me</h2>
+            <div class="about-content">
+                <p>I'm a computer science student of VIDARBHA INSITUTE OF TECHNOLOGY and i am also a Data Science student in IIT MADRASH . I love coding, problem-solving, and building user-friendly web applications and i love Data Analysis and playing with data and machine learning. In my free time, I edits photo's and video's.</p>
+                <div class="education">
+                    <h3>Education</h3>
+                    <ul>
+                        <li><strong>Bachelor of Science in Computer Science</strong> - VIDARBHA INSITUTE OF TECHNOLOGY (2024-2028)</li>
+                        <li><strong>Bachelor of Science in Data Science</strong> - IIT MADRASH (2024-2028)</li>
+                        <li><strong>Intermediate Education</strong> - K.V.M Inter Collage  (2022)</li>
+                        <li><strong>High School </strong> - C.M.P Public school(2020)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section id="skills" class="section">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="skills-grid">
+                <div class="skill-category">
+                    <h3>Technical Skills</h3>
+                    <div class="skill">
+                        <span>Python</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>HTML/CSS</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>C++</span>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+                <div class="skill-category">
+                    <h3>Soft Skills</h3>
+                    <div class="skill">
+                        <span>Communication</span>
+                        <div class="progress-bar"><div class="progress" style="width: 95%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Teamwork</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Problem Solving</span>
+                        <div class="progress-bar"><div class="progress" style="width: 85%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Critical thinking</span>
+                        <div class="progress-bar"><div class="progress" style="width: 90%;"></div></div>
+                    </div>
+                    <div class="skill">
+                        <span>Time management</span>
+                        <div class="progress-bar"><div class="progress" style="width: 80%;"></div></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="section">
+        <div class="container">
+            <h2>Projects</h2>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <h3>Portfolio Website</h3>
+                    <p>A responsive portfolio site built with HTML, CSS, and JS. Features smooth animations and a clean design.</p>
+                    <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/example/portfolio" target="_blank" class="btn"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Excel worksheet project</h3>
+                    <p>A simple excel sheet that represent my sem exam marksheet in pai chart and bar graph .</p>
+                    <p><strong>Tech Used:</strong> Excel sheet and numpy</p>
+                    <a href="https://1drv.ms/x/c/b54fa3838bbaac2b/IQCasIKzQe6SR7_5dgriEKYvAR0QkMGGABtqyYC9Bj37KkE?e=Nbdh2f" target="_blank" class="btn"><i class="fab fa-github"></i> View on Excel</a>
+                </div>
+                <div class="project-card">
+                    <h3>Task Manager</h3>
+                    <p>A to-do list app with local storage, allowing users to add, edit, and delete tasks.</p>
+                    <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/example/task-manager" target="_blank" class="btn"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+                <div class="project-card">
+                    <h3>Task Manager</h3>
+                    <p>A to-do list app with local storage, allowing users to add, edit, and delete tasks.</p>
+                    <p><strong>Tech Used:</strong> HTML, CSS, JavaScript</p>
+                    <a href="https://github.com/example/task-manager" target="_blank" class="btn"><i class="fab fa-github"></i> View on GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Resume Section -->
+    <section id="resume" class="section">
+        <div class="container">
+            <h2>Resume</h2>
+            <p>Download my resume to learn more about my experience and qualifications.</p>
+            <a href="Abhi2_portfolio_resume_pdf.pdf" download class="btn"><i class="fas fa-download"></i> Download Resume</a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <div class="contact-content">
+                <form id="contact-form">
+                    <input type="text" name="name" placeholder="Your Name" required>
+                    <input type="email" name="email" placeholder="Your Email" required>
+                    <textarea name="message" placeholder="Your Message" required></textarea>
+                    <button type="submit" class="btn">Send Message</button>
+                </form>
+                <div class="contact-info">
+                    <p><i class="fas fa-envelope"></i> abhiy9218@gmail.com</p>
+                    <p><i class="fas fa-phone"></i> 9120043536</p>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/abhishek-yadav-6934a4277/" target="_blank"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/abhiy9218-sudo" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/_._the_._abhi_._/" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100063904073328" target="_blank"><i class="fab fa-facebook"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2026 Abhishek Yadav. All rights reserved Thanks to visiting my portfolio.</p>
+        </div>
+    </footer>
+
+    <!-- Link to external JS -->
+    <script src="script.js"></script>
+</body>
+</html>
